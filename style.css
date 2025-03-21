@@ -17,25 +17,54 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    background-color: black;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    z-index: 3;
+nav {
+    display: flex; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px 20px; 
+    width: 100%; 
+    height: 70px;
+    position: relative; 
+    left: 0;
+    z-index: 10; 
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 40px;
-    display: inline-block;
+.nav-logo {
+    height: 80px; /* Adjust size of the logo */
+    margin-right: 0px; 
 }
 
-.navbar a:hover {
-    background-color: gray;
-    border-radius: 5px;
+.redtype-logo {
+    height: 120px; /* Adjust size of the logo */
+    margin-right: 100px;
+    left: 0%;
 }
+.nav-links {
+    left: 10%;
+    list-style: none; /* Removes default bullet points */
+    display: flex; /* Enables horizontal layout */
+    gap: 60px; /* Adds spacing between links */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Tungsten', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: red; /* Changes color on hover */
+}
+
 
 .background-img {
     background-image: url('Valorant Assets/Valorant-Art/VALORANT_Logo_V.jpg');
@@ -207,7 +236,7 @@ body {
     left: 10%; /* Adjust this to move it more left or right */
     top: 50%; /* Center it vertically */
     transform: translateY(-50%); /* Ensures it's centered */
-    width: 35%; 
+    width: 30%; 
     height: 40%;
     background-color: #ECE7E1; 
     border-radius: 5px;
@@ -217,5 +246,79 @@ body {
     z-index: 2; /* Make sure it's above the image */
 }
 
+.icon-card {
+    display: grid;
+    grid-template-columns: repeat(5, 60px); /* 5 images per row with 60px width each */
+    gap: 10px 50px;  /* 10px vertical gap, 20px horizontal gap */
+    justify-content: center; /* Centers the grid inside the container */
+}
 
+.icon-card img {
+    width: 70px;
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.agent-class {
+    background-image: url('Valorant Assets/BW.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.agent-class .class-card {
+    position: absolute;
+    left: 9%; /* Adjust left positioning */
+    top: 50%; /* Center vertically */
+    transform: translateY(-60%); 
+    background-color: #ECE7E1; 
+    width: 20%; 
+    padding: 25px; 
+    border-radius: 5px; 
+    z-index: 2; 
+    display: inline-block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.agent-class .class-img {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 35px; 
+}
+
+.agent-class .class-img img {
+    width: 60px; 
+    height: auto; 
+    transition: all 0.3s ease; 
+}
+
+.agent-class .class-img img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.agent-class h2 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Tungsten', sans-serif;
+    padding: 20px 0;
+    position: absolute; 
+    top: 10px; 
+    left: 10%; 
+    margin: 0; 
+    z-index: 2; 
+}
+
+.agents h2{
+    font-size: 70px;
+    color: white;
+    font-family: 'Tungsten', sans-serif;
+    padding: 20px 0;
+    position: absolute; 
+    top: 10px; 
+    left: 10%; 
+    margin: 0; 
+    z-index: 2; 
+}
 
