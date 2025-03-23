@@ -60,22 +60,26 @@
         {
             "name": "Sage",
             "role": "Sentinel",
-            "description": "A Chinese healer who provides sustainability and control with barriers and healing abilities.",
+            "description": "Sage is a supportive Sentinel who excels at healing and area control, using her abilities to revive teammates, slow enemies, and create defensive barriers to hold strategic positions.",
             "abilities": [
                 {
                     "name": "Barrier Orb",
+                    "descriptiion": "Sage uses Barrier Orb to create a large, solid wall that blocks vision and movement.",
                     "image": "Valorant Assets/Abilities/Property 1=c-Sage_Barrier_Orb.png"
                 },
                 {
-                    "name": "Slow Orb",
+                    "name": "Resurrection",
+                    "description": "Sage's ultimate ability, Resurrection, allows her to revive a fallen teammate to full health.",
                     "image": "Valorant Assets/Abilities/Property 1=e-Sage_Resurrection.png"
                 },
                 {
-                    "name": "Healing Orb",
+                    "name": "Slow Orb",
+                    "description": "Slow Orb is Sage's ability that creates a field that slows enemies who pass through it.",
                     "image": "Valorant Assets/Abilities/Property 1=q-Sage_Slow_Orb.png"
                 },
                 {
-                    "name": "Resurrection",
+                    "name": "Healing",
+                    "description": "Sage uses Healing Orb to heal herself or her teammates over time.",
                     "image": "Valorant Assets/Abilities/Property 1=x-Sage_Healing_Orb.png"
                 }
             ],
@@ -84,27 +88,343 @@
         {
             "name": "Gekko",
             "role": "Initiator",
-            "description": "A street-smart initiator from Los Angeles who commands a crew of chaotic creatures to flush enemies and take control of the battlefield.",
+            "description": "Gekko is an Initiator with a unique set of creature companions that help him clear angles, detain enemies, and support his team with utility. His versatile abilities allow him to disrupt opponents while providing recon and crowd control.",
             "abilities": [
               {
+                "name": "Mosh Pit",
+                "description": "Gekko's Mosh Pit ability sends his creature companion to a target location, where it creates a field that slows and damages enemies.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Gekko_Mosh_Pit.png"
+              },
+              {
                 "name": "Dizzy",
-                "image": "assets/Abilities/Dizzy.png"
+                "description": "Dizzy is Gekko's creature companion that can be sent to a target location to disorient and confuse enemies.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Gekko_Dizzy.png"
               },
               {
                 "name": "Wingman",
-                "image": "assets/Abilities/Wingman.png"
-              },
-              {
-                "name": "Mosh Pit",
-                "image": "assets/Abilities/Mosh_Pit.png"
+                "description": "Wingman is Gekko's creature companion that can be sent to a target location to provide recon and reveal enemy positions.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Gekko_Wingman.png"
               },
               {
                 "name": "Thrash",
-                "image": "assets/Abilities/Thrash.png"
+                "description": "Gekko's ultimate ability, Thrash, sends his creature companion to a target location, where it creates a field that stuns and damages enemies.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Gekko_Thrash.png"
               }
             ],
             "image": "assets/Agents/Gekko_artwork.png"
+          },
+
+          {
+            "name": "Brimstone",
+            "role": "Controller",
+            "description": "Brimstone is a tactical commander who deploys long-range smokes and powerful area denial tools to control the battlefield.",
+            "abilities": [
+              {
+                "name": "Stim Beacon",
+                "description": "Launches an incendiary grenade that deploys a damaging field of fire.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Brimstone_Stim_Beacon.png"
+              },
+              {
+                "name": "Sky Smoke",
+                "description": "Deploys a beacon that grants rapid-fire to allies who enter its radius.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Brimstone_Sky_Smoke.png"
+              },
+              {
+                "name": "Incendiary",
+                "description": "Deploys long-range, targeted smokescreens for strategic coverage.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Brimstone_Incendiary.png"
+              },
+              {
+                "name": "Orbital Strike",
+                "description": "Calls down a devastating orbital laser that deals high damage over time in a targeted area.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Brimstone_Orbital_Strike.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Brimstone_artwork.png"
+          },
+          {
+            "name": "Phoenix",
+            "role": "Duelist",
+            "description": "Phoenix uses fire-based abilities to curve flashes, block vision, and heal himself in combat.",
+            "abilities": [
+              {
+                "name": "Blaze",
+                "description": "Throws a flare orb that bursts into a blinding flash after a brief delay.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Phoenix_Blaze.png"
+              },
+              {
+                "name": "Hot Hands",
+                "description": "Throws a fireball that explodes after a delay or on impact, healing Phoenix and damaging enemies.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Phoenix_Hot_Hands.png"
+              },
+              {
+                "name": "Curveball",
+                "description": "Creates a wall of fire that blocks vision and damages anyone passing through.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Phoenix_Curveball.png"
+              },
+              {
+                "name": "Run It Back",
+                "description": "Marks Phoenix’s current location. If he dies during the ability’s duration, he is reborn at that location.",
+                "image": "Valorant Assets/Abilities/Phoenix_Run_It_Back.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Phoenix_artwork.png"
+          },
+          {
+            "name": "Breach",
+            "role": "Initiator",
+            "description": "Breach is an initiator who uses seismic blasts to force enemies out of position and clear tight spaces.",
+            "abilities": [
+              {
+                "name": "Aftershock",
+                "description": "Fires a fast-acting flash through a wall to blind enemies on the other side.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Breach_Aftershock.png"
+              },
+              {
+                "name": "Fault Line",
+                "description": "Equips a seismic blast that dazes enemies in a line across the map.",
+                "image": "Valorant Assets/Abilities/Breach_Fault_Line.png"
+              },
+              {
+                "name": "Flashpoint",
+                "description": "Fires a burst through a wall that explodes multiple times and deals heavy damage.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Breach_Flashpoint.png"
+              },
+              {
+                "name": "Rolling Thunder",
+                "description": "Unleashes a wide quake that dazes and knocks up all enemies in its path.",
+                "image": "Valorant Assets/Abilities/Breach_Rolling_Thunder.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Breach_artwork.png"
+          },
+          {
+            "name": "Cypher",
+            "role": "Sentinel",
+            "description": "Cypher is an intelligence agent who gathers crucial enemy information with his network of surveillance devices.",
+            "abilities": [
+              {
+                "name": "Trapwire",
+                "description": "Sets a tripwire between two walls, revealing and dazing enemies who cross it.",
+                "image": "Valorant Assets/Abilities/Cypher_Trapwire.png"
+              },
+              {
+                "name": "Spycam",
+                "description": "Throws a remote-activated trap that slows enemies who pass through it.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Cypher_Spycam.png"
+              },
+              {
+                "name": "Cyber Cage",
+                "description": "Places a remote camera that can be used to watch areas and fire tracking darts.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Cypher_Cyber_Cage.png"
+              },
+              {
+                "name": "Neural Theft",
+                "description": "Reveals the location of all remaining enemies by using a recently deceased enemy’s body.",
+                "image": "Valorant Assets/Abilities/Cypher_Neural_Theft.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Cypher_artwork.png"
+          },
+          {
+            "name": "Omen",
+            "role": "Controller",
+            "description": "Omen is a shadowy figure who obscures vision, teleports across the map, and blinds enemies.",
+            "abilities": [
+              {
+                "name": "Shrouded Step",
+                "description": "Teleports to a nearby location instantly.",
+                "image": "Valorant Assets/Abilities/Omen_Shrouded_Step.png"
+              },
+              {
+                "name": "Dark Cover",
+                "description": "Sends out a shadowy projectile that blinds all enemies it passes through.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Omen_Dark_Cover.png"
+              },
+              {
+                "name": "Paranoia",
+                "description": "Casts a smoke orb that can be steered in the air and obscures vision.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Omen_Paranoia.png"
+              },
+              {
+                "name": "From the Shadows",
+                "description": "Allows Omen to teleport anywhere on the map. If killed during the teleport, he returns to the original location.",
+                "image": "Valorant Assets/Abilities/Omen_From_The_Shadows.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Omen_artwork.png"
+          },
+
+          {
+            "name": "Reyna",
+            "role": "Duelist",
+            "description": "Reyna thrives on eliminations, becoming stronger with every kill. She’s designed to carry and clutch rounds using her self-sustain and evasive powers.",
+            "abilities": [
+              {
+                "name": "Leer",
+                "description": "Casts an ethereal eye that nearsights all enemies who look at it.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Reyna_Leer.png"
+              },
+              {
+                "name": "Dismiss",
+                "description": "Consumes a Soul Orb left by a kill to rapidly heal for a short duration.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Reyna_Dismiss.png"
+              },
+              {
+                "name": "Devour",
+                "description": "Consumes a Soul Orb to become intangible and invulnerable for a short duration.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Reyna_Devour.png"
+              },
+              {
+                "name": "Empress",
+                "description": "Enters a frenzy, increasing fire rate, healing on kills, and enabling the use of enhanced versions of her abilities.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Reyna_Empress.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Reyna_artwork.png"
+          },
+          {
+            "name": "Sova",
+            "role": "Initiator",
+            "description": "Sova reveals and tracks enemies using high-tech arrows and a recon drone, excelling in intel gathering and long-range engagements.",
+            "abilities": [
+              {
+                "name": "Owl Drone",
+                "description": "Deploys a drone to scout and tag enemies with a dart.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Sova_Owl_Drone.png"
+              },
+              {
+                "name": "Recon Bolt",
+                "description": "Fires a bolt that explodes and deals AoE damage.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Sova_Recon_Bolt.png"
+              },
+              {
+                "name": "Shock Bolt",
+                "description": "Fires a sonar arrow that reveals enemies in its line of sight.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Sova_Shock_Bolt.png"
+              },
+              {
+                "name": "Hunter's Fury",
+                "description": "Launches up to three long-range energy blasts that deal damage and reveal enemies across the map.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Sova_Hunter's_Fury.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Sova_artwork.png"
+          },
+          {
+            "name": "Killjoy",
+            "role": "Sentinel",
+            "description": "Killjoy is a German tech expert who locks down sites with traps, bots, and a game-changing lockdown device.",
+            "abilities": [
+              {
+                "name": "Nanoswarm",
+                "description": "Throws a grenade that releases a swarm of nanobots, dealing damage.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Killjoy_Nanoswarm.png"
+              },
+              {
+                "name": "Turret",
+                "description": "Deploys a bot that hunts down enemies and applies a debuff.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Killjoy_Turret.png"
+              },
+              {
+                "name": "Alarmbot",
+                "description": "Deploys a turret that fires at enemies in a 180-degree cone.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Killjoy_Alarmbot.png"
+              },
+              {
+                "name": "Lockdown",
+                "description": "Deploys a device that detains all enemies in a large radius after a wind-up.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Killjoy_Lockdown.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Killjoy_artwork.png"
+          },
+          {
+            "name": "Viper",
+            "role": "Controller",
+            "description": "Viper uses poisonous gas and acid to control the battlefield, zoning and damaging enemies who enter her toxic areas.",
+            "abilities": [
+              {
+                "name": "Snake Bite",
+                "description": "Launches a canister that shatters into a pool of acid.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Viper_Snakebite.png"
+              },
+              {
+                "name": "Toxic Screen",
+                "description": "Throws a gas emitter that can be reactivated to emit a toxic smoke cloud.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Viper_Toxic_Screen.png"
+              },
+              {
+                "name": "Poison Cloud",
+                "description": "Deploys a long wall of gas emitters that can emit a tall toxic wall.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Viper_Poison_Cloud.png"
+              },
+              {
+                "name": "Viper's Pit",
+                "description": "Creates a large cloud that obscures vision and decays enemies’ health inside.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Viper_Viper's_Pit.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Viper_artwork.png"
+          },
+          {
+            "name": "Raze",
+            "role": "Duelist",
+            "description": "Raze is an explosive expert who flushes enemies out of cover with bombs and powerful blasts.",
+            "abilities": [
+              {
+                "name": "Boom Bot",
+                "description": "Deploys a bot that bounces off walls and explodes on contact with enemies.",
+                "image": "Valorant Assets/Abilities/Property 1=c-Raze_Boom_Bot.png"
+              },
+              {
+                "name": "Paint Shells",
+                "description": "Throws a satchel charge that sticks to surfaces and can be detonated to deal damage or boost movement.",
+                "image": "Valorant Assets/Abilities/Property 1=e-Raze_Paint_Sheels.png"
+              },
+              {
+                "name": "Blast Pack",
+                "description": "Throws a cluster grenade that deals high area damage.",
+                "image": "Valorant Assets/Abilities/Property 1=q-Raze_Blast_Pack.png"
+              },
+              {
+                "name": "Showstopper",
+                "description": "Launches a rocket launcher that deals massive damage in a large radius.",
+                "image": "Valorant Assets/Abilities/Property 1=x-Raze_Showstopper.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/Raze_artwork.png"
+          },
+          {
+            "name": "KAY/O",
+            "role": "Initiator",
+            "description": "KAY/O is a machine built for suppression, preventing enemies from using abilities and giving his team a tactical advantage.",
+            "abilities": [
+              {
+                "name": "FRAG/ment",
+                "description": "Throws an explosive fragment that sticks to surfaces and explodes multiple times.",
+                "image": "Valorant Assets/Abilities/Property 1=c-KAYO_FRAGment.png"
+              },
+              {
+                "name": "ZERO/point",
+                "description": "Throws a flash grenade that explodes after a short wind-up.",
+                "image": "Valorant Assets/Abilities/Property 1=e-KAYO_ZEROpoint.png"
+              },
+              {
+                "name": "FLASH/drive",
+                "description": "Throws a suppressing knife that disables enemy abilities in a radius.",
+                "image": "Valorant Assets/Abilities/Property 1=q-KAYO_FLASHdrive.png"
+              },
+              {
+                "name": "NULL/cmd",
+                "description": "Overloads KAY/O’s systems, emitting pulses that suppress enemies and allowing him to be revived if downed.",
+                "image": "Valorant Assets/Abilities/Property 1=x-KAYO_NULLcmd.png"
+              }
+            ],
+            "image": "Valorant Assets/Agents/KAYO_artwork.png"
           }
           
+          
     ]
+    
 }
