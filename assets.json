@@ -1,0 +1,110 @@
+{
+    "agents": [
+        {
+            "name": "Astra",
+            "role": "Controller",
+            "description": "Astra is a versatile Controller who uses her stars to manipulate the battlefield with her smokes, gravity wells, and a powerful cosmic divide.",
+            "abilities": [
+                {
+                    "name": "Gravity Well",
+                    "description": "Astra's Gravity Well is a device that pulls in enemies and creates a burst of force, disrupting the enemy’s movements.",
+                    "image": "Valorant Assets/Abilities/Property 1=c-Astra_Gravity_Well.png"
+                },
+                {
+                    "name": "Nebula",
+                    "description": "Nebula allows Astra to create a large sphere of smoke, providing cover and blocking vision.",
+                    "image": "Valorant Assets/Abilities/Property 1=e-Astra_Nebula.png"
+                },
+                {
+                    "name": "Stars",
+                    "description": "Astra uses Stars as a tool to manipulate the map, including the Gravity Well and Nebula abilities.",
+                    "image": "Valorant Assets/Abilities/Property 1=q-Astra_Nova_Pulse.png"
+                },
+                {
+                    "name": "Cosmic Divide",
+                    "description": "Astra's ultimate ability, Cosmic Divide, creates a massive divide that blocks sound and vision, giving Astra’s team control of a large area.",
+                    "image": "Valorant Assets/Abilities/Property 1=x-Astra_Astral_Form.png"
+                }
+            ],
+            "image": "Valorant Assets/Agents/Astra_artwork.png"
+        },
+        {
+            "name": "Jett",
+            "role": "Duelist",
+            "description": "Jett is a fast-moving, high-damage Duelist who excels at agile playstyles with abilities that allow her to dash and control the air.",
+            "abilities": [
+                {
+                    "name": "Cloudburst",
+                    "description": "Jett uses Cloudburst to throw a small cloud of smoke, providing cover for herself and her team.",
+                    "image": "Valorant Assets/Abilities/Property 1=c-Jett_Cloudburst.png"
+                },
+                {
+                    "name": "Tailwind",
+                    "description": "Tailwind is Jett’s mobility ability that lets her dash quickly across the map, repositioning or escaping danger.",
+                    "image": "Valorant Assets/Abilities/Property 1=e-Jett_Tailwind.png"
+                },
+                {
+                    "name": "Updraft",
+                    "description": "Updraft lets Jett propel herself vertically, gaining a high ground advantage.",
+                    "image": "Valorant Assets/Abilities/Property 1=q-Jett_Updraft.png"
+                },
+                {
+                    "name": "Ultimate: Tailwind",
+                    "description": "Jett's ultimate ability allows her to unleash an incredibly rapid dash with more aggressive positioning.",
+                    "image": "Valorant Assets/Abilities/Property 1=x-Jett_Blade_Storm.png"
+                }
+            ],
+            "image": "Valorant Assets/Agents/Jett_artwork.png"
+        },
+
+        {
+            "name": "Sage",
+            "role": "Sentinel",
+            "description": "A Chinese healer who provides sustainability and control with barriers and healing abilities.",
+            "abilities": [
+                {
+                    "name": "Barrier Orb",
+                    "image": "Valorant Assets/Abilities/Property 1=c-Sage_Barrier_Orb.png"
+                },
+                {
+                    "name": "Slow Orb",
+                    "image": "Valorant Assets/Abilities/Property 1=e-Sage_Resurrection.png"
+                },
+                {
+                    "name": "Healing Orb",
+                    "image": "Valorant Assets/Abilities/Property 1=q-Sage_Slow_Orb.png"
+                },
+                {
+                    "name": "Resurrection",
+                    "image": "Valorant Assets/Abilities/Property 1=x-Sage_Healing_Orb.png"
+                }
+            ],
+            "image": "Valorant Assets/Agents/Sage_artwork.png"
+        },
+        {
+            "name": "Gekko",
+            "role": "Initiator",
+            "description": "A street-smart initiator from Los Angeles who commands a crew of chaotic creatures to flush enemies and take control of the battlefield.",
+            "abilities": [
+              {
+                "name": "Dizzy",
+                "image": "assets/Abilities/Dizzy.png"
+              },
+              {
+                "name": "Wingman",
+                "image": "assets/Abilities/Wingman.png"
+              },
+              {
+                "name": "Mosh Pit",
+                "image": "assets/Abilities/Mosh_Pit.png"
+              },
+              {
+                "name": "Thrash",
+                "image": "assets/Abilities/Thrash.png"
+              }
+            ],
+            "image": "assets/Agents/Gekko_artwork.png"
+          }
+          
+    ]
+}

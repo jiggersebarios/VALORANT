@@ -1,106 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="valo.js">
     <title>Valorant</title>
-    <style>
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="valo.js"></script>
 </head>
 <body>
 
 <div class="navbar">
     <nav>
-        <img src="Valorant Assets/Full Color/Logotype & Mark/V_Logomark_Red.png" alt="red-logo" class="nav-logo">
-        <img src="Valorant Assets/Full Color/Logotype & Mark/V_Logotype_Red.png" alt="redtype-logo" class="redtype-logo">
+        <img src="Valorant Assets/Full Color/Logotype & Mark/V_Logomark_Red.png" alt="Valorant Red Logo" class="nav-logo">
+        <img src="Valorant Assets/Full Color/Logotype & Mark/V_Logotype_Red.png" alt="Valorant Logotype" class="redtype-logo">
         <ul class="nav-links">
             <li><a href="#agents">Agents</a></li>
             <li><a href="#roles">Roles</a></li>
         </ul>
     </nav>
-    
-   
 </div>
 
 <div class="background-img"></div>
 
 <div class="content">
     <div class="content-img">
-        <img src="Valorant Assets/background.webp" alt="Valorant background">
+        <img src="Valorant Assets/background.webp" alt="Valorant Background">
     </div>
-    <img class="front-left-img" src="Valorant Assets/1d62a3751be9d7abfce84da8ca89be7d79f07fed-1232x1232.webp" alt="Reyna/Raze">
+    <img class="front-left-img" src="Valorant Assets/1d62a3751be9d7abfce84da8ca89be7d79f07fed-1232x1232.webp" alt="Valorant Agents">
 
     <div class="front-right-content">
         <h2>YOUR AGENTS</h2>
-        <p>CREATIVITY IS YOUR GREATEST WEAPON. <br>
+        <p>CREATIVITY IS YOUR GREATEST WEAPON.<br>
             More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine.
-            No two Agents play alike, just as no two highlight reels will look the same.</p>
-            <a href="#agents"> <button >VIEW ALL AGENTS</button></a>
-       
+            No two Agents play alike, just as no two highlight reels will look the same.
+        </p>
+        <a href="#agents"><button>VIEW ALL AGENTS</button></a>
     </div>
 </div>
 
-<div class="below-background"></div>
-<div class="below-container-content" id="roles">
-    <img src="Valorant Assets/Valorant-Art/L10_Sillos_Final.jpg" alt="container img" class="container-img">
+<div class="below-background" id="roles"></div>
+
+<div class="below-container-content" >
+    <img src="Valorant Assets/Valorant-Art/L10_Sillos_Final.jpg" alt="Valorant Roles" class="container-img">
     <div class="text-content">
         <h2>WHAT’S YOUR ROLE?</h2>
         <p>Pick your role, master your agent, and dominate the battlefield. 
             No matter your choice, teamwork and strategy will always be key to victory.
         </p>
         <a href="#viewroles"><button>VIEW ALL ROLES</button></a>
-        
     </div>
 </div>
+
 <div class="classes" id="classes">
     <img src="Valorant Assets/Class/Property 1=Sentinel.png" alt="Sentinel">
-    <img src="Valorant Assets/Class/Property 1=Duelist.png" alt="duel">
-    <img src="Valorant Assets/Class/Property 1=Initiator.png" alt="initiator">
-    <img src="Valorant Assets/Class/Property 1=Controller.png" alt="smoker">
+    <img src="Valorant Assets/Class/Property 1=Duelist.png" alt="Duelist">
+    <img src="Valorant Assets/Class/Property 1=Initiator.png" alt="Initiator">
+    <img src="Valorant Assets/Class/Property 1=Controller.png" alt="Controller">
 </div>
 
-    <div class="agents" id="agents"> 
-        <h2>AGENTS</h2>
-        <div class="agent-content-img">
-            <img src="Valorant Assets/background.webp" alt="agent-background">
-            <div class="icon-card">
-                <img src="Valorant Assets/Agents-Profiles/Astra.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Breach.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Chamber.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Cypher.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Fade.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Gekko.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Harbor.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Jett.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/KAYO.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Killjoy.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Neon.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Omen.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Phoenix.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Reyna.png" alt="">
-                <img src="Valorant Assets/Agents-Profiles/Raze.png" alt="">
-                
+<div class="agents" id="agents"> 
+    <h2>AGENTS</h2>
+    <div class="agent-content-img">
+        <img src="Valorant Assets/background.webp" alt="Agent Background" class="agent-bg">
+    
+        <div class="agent-overlay" id="agent-details">
+            <div class="agent-info-left">
+              <h1 id="agent-name">AGENT NAME</h1>
+              <p id="agent-role">ROLE</p>
+              <p id="agent-description">Agent description...</p>
+          
+              <div class="agent-abilities">
+                <h4>ABILITIES</h4>
+                <div class="ability-icons" id="ability-icons"></div>
+                <div class="ability-description" id="ability-description">
+                  <em>Click an ability to see its description.</em>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="agent-class" id="viewroles">
-        <h2>AGENT CLASSES</h2>
-        <div class="class-card">
-           <div class="class-img"> 
-            <img src="Valorant Assets/B&W/Property 1=Controller 1.png" alt="">
-            <img src="Valorant Assets/B&W/Property 1=Duelist 1.png" alt="">
-            <img src="Valorant Assets/B&W/Property 1=Initiator 2.png" alt="">
-            <img src="Valorant Assets/B&W/Property 1=Sentinel 1.png" alt="">
-           </div> 
+          
+            <div class="agent-img-right">
+              <img id="agent-full-img" src="" alt="Agent Artwork" />
+            </div>
+          </div>
+          
+        
+    
+        <!-- Agent icons -->
+        <div class="icon-card">
+            <button onclick="fetchAgent('Astra')"><img src="Valorant Assets/Agents-Profiles/Astra.png" alt="Astra"></button>
+            <button onclick="fetchAgent('Jett')"><img src="Valorant Assets/Agents-Profiles/Jett.png" alt="Jett"></button>
+            <button onclick="fetchAgent('Gekko')"><img src="Valorant Assets/Agents-Profiles/Gekko.png" alt="Astra"></button>
+            <button onclick="fetchAgent('Sage')"><img src="Valorant Assets/Agents-Profiles/Sage.png" alt="Jett"></button>
         </div>
     </div>
     
- 
+
+</div>
+
+<div class="agent-class" id="viewroles">
+    <h2 class="title">AGENT CLASSES</h2>
+    <section>
+        <div class="class-card">
+            <div class="class-img"> 
+                <button data-class="Controller">
+                    <img src="Valorant Assets/B&W/Property 1=Controller 1.png" alt="">
+                    <h3>Controller</h3>
+                </button>
+                <button data-class="Duelist">
+                    <img src="Valorant Assets/B&W/Property 1=Duelist 1.png" alt="">
+                    <h3>Duelist</h3>
+                </button>
+                <button data-class="Initiator">
+                    <img src="Valorant Assets/B&W/Property 1=Initiator 2.png" alt="">
+                    <h3>Initiator</h3>
+                </button>
+                <button data-class="Sentinel">
+                    <img src="Valorant Assets/B&W/Property 1=Sentinel 1.png" alt="">
+                    <h3>Sentinel</h3>
+                </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="agents-list" class="agents-grid"></section>
+    <section id="agents"></section>
+    <section class="profile-details" id="profileDetails"></section>
+</div>
+
+</body>
 </html>

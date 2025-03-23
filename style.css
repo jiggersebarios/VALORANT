@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -211,8 +212,11 @@ nav {
 .classes img {
     width: 70px; /* You can adjust the width as needed */
     height: auto; /* Ensures the image's aspect ratio is maintained */
+    
 }
 
+
+/* Agent */
 .agents {
     background-color: #0F1923; /* Dark background color */
     display: flex;
@@ -223,12 +227,127 @@ nav {
     z-index: 1;
 }
 
+.agent-content-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 
-.agent-content-img img {
+.agent-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
 
-    max-width: 100%;
-    height: 100%;
-    
+.agent-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    display: flex;
+    color: white;
+    width: 65%; /* ⬅️ Shrink this to tighten layout */
+    max-width: 950px; /* ⬅️ Less width = closer content */
+    padding: 20px;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px; /* ⬅️ Space between text and image */
+}
+
+  
+  .agent-info-left {
+    max-width: 500px;
+  }
+  
+  .agent-info-left h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #agent-role {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    color:#0F1923;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .agent-info-left p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .agent-abilities h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .ability-icons {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .ability-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .ability-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .ability-description {
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #555;
+    padding-top: 8px;
+  }
+  
+  .agent-img-right img {
+    max-height: 580px;
+    border-radius: 12px;
+    margin-right: 120px;
+  }
+  
+
+.agent-abilities {
+    margin-top: 15px;
+}
+
+.ability-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.ability-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.ability-icons img:hover {
+    transform: scale(1.1);
+}
+
+.ability-description {
+    font-size: 14px;
+    color: #ccc;
+    padding-top: 5px;
+    border-top: 1px solid #555;
 }
 
 .icon-card {
@@ -246,16 +365,37 @@ nav {
     z-index: 2; /* Make sure it's above the image */
 }
 
+/* Grid layout for agent buttons */
 .icon-card {
     display: grid;
     grid-template-columns: repeat(5, 60px); /* 5 images per row with 60px width each */
-    gap: 10px 50px;  /* 10px vertical gap, 20px horizontal gap */
+    gap: 10px 50px;  /* 10px vertical gap, 50px horizontal gap */
     justify-content: center; /* Centers the grid inside the container */
 }
 
+/* Remove button styles, keeping only the image */
+.icon-card button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for images inside the buttons */
 .icon-card img {
     width: 70px;
     height: auto; /* Maintains the aspect ratio */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.icon-card img:hover {
+    opacity: 0.7;
 }
 
 .agent-class {
@@ -274,8 +414,8 @@ nav {
     top: 50%; /* Center vertically */
     transform: translateY(-60%); 
     background-color: #ECE7E1; 
-    width: 20%; 
-    padding: 25px; 
+    width: 30%; 
+    padding: 10px; 
     border-radius: 5px; 
     z-index: 2; 
     display: inline-block; 
@@ -283,13 +423,17 @@ nav {
 }
 
 .agent-class .class-img {
+    
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
-    gap: 35px; 
+    gap: 30px; 
+    margin-top: 20px;
+   
 }
 
 .agent-class .class-img img {
+  
     width: 60px; 
     height: auto; 
     transition: all 0.3s ease; 
@@ -297,6 +441,8 @@ nav {
 
 .agent-class .class-img img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 100px;
+    transform: scale(1.1);
 }
 .agent-class h2 {
     font-size: 70px;
@@ -321,4 +467,114 @@ nav {
     margin: 0; 
     z-index: 2; 
 }
+
+.class-img button {
+    background: none; /* Removes background */
+    border: none; /* Removes border */
+    padding: 0; /* Removes extra space */
+    margin: 5px; /* Adds spacing between buttons */
+    cursor: pointer; /* Makes it clickable */
+    display: flex; /* Aligns image and text */
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center; /* Centers content */
+}
+
+.class-img button img {
+    width: 80px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.class-img button:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.class-img button h3 {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 18px; /* Adjust text size */
+    color: rgb(0, 0, 0); /* Text color */
+    font-family: 'Inter', sans-serif; /* Custom font */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+
+
+.agents-grid {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.agent-class {
+    display: flex;
+    justify-content: flex-end; /* Push content to the right */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    position: relative;
+}
+
+#agents-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 15px;
+    width: 50%; /* Adjust width to position correctly */
+    margin-right: 5%; /* Ensures it stays in the middle-right */
+    justify-items: center; /* Aligns the cards to the center */
+     animation: fadeIn 1s forwards; /* Fade-in effect for the entire grid */
+    animation-delay: 0.5s; /* Delay to start the grid's fade-in */
+}
+
+.agent-card {
+    background: #1c1c1c; /* Dark theme */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Fixed width for the card */
+    height: 340px; /* Height to accommodate image and name */
+    display: flex;
+    flex-direction: column; /* Stack image and name vertically */
+}
+
+.agent-card:hover {
+    transform: scale(1.05);
+}
+
+.agent-card img {
+    width: 100%; /* Ensures image width fits within the card */
+    height: 80%; /* Takes up 80% of the card's height */
+    object-fit: contain; /* Maintains aspect ratio while fitting image within card */
+    border-bottom: 2px solid #ff4655; /* Optional: Border below the image */
+    
+}
+
+.agent-card h4 {
+    background: #ff4655;
+    color: #fff;
+    top: 50px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 10%; /* Ensure the name occupies the remaining height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center name text vertically */
+}
+
+/* Fade-in effect for agents */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
