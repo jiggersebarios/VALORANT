@@ -111,7 +111,7 @@
                 "image": "Valorant Assets/Abilities/Property 1=x-Gekko_Thrash.png"
               }
             ],
-            "image": "assets/Agents/Gekko_artwork.png"
+            "image": "Valorant Assets/Agents/Gekko_artwork.png"
           },
 
           {
@@ -165,7 +165,7 @@
               {
                 "name": "Run It Back",
                 "description": "Marks Phoenix’s current location. If he dies during the ability’s duration, he is reborn at that location.",
-                "image": "Valorant Assets/Abilities/Phoenix_Run_It_Back.png"
+                "image": "Valorant Assets/Abilities/Property 1=x-Phoenix_Run_it_Back.png"
               }
             ],
             "image": "Valorant Assets/Agents/Phoenix_artwork.png"
@@ -183,7 +183,7 @@
               {
                 "name": "Fault Line",
                 "description": "Equips a seismic blast that dazes enemies in a line across the map.",
-                "image": "Valorant Assets/Abilities/Breach_Fault_Line.png"
+                "image": "Valorant Assets/Abilities/Property 1=e-Breach_Fault_Line.png"
               },
               {
                 "name": "Flashpoint",
@@ -193,7 +193,7 @@
               {
                 "name": "Rolling Thunder",
                 "description": "Unleashes a wide quake that dazes and knocks up all enemies in its path.",
-                "image": "Valorant Assets/Abilities/Breach_Rolling_Thunder.png"
+                "image": "Valorant Assets/Abilities/Property 1=x-Breach_Rolling_Thunder.png"
               }
             ],
             "image": "Valorant Assets/Agents/Breach_artwork.png"
@@ -206,7 +206,7 @@
               {
                 "name": "Trapwire",
                 "description": "Sets a tripwire between two walls, revealing and dazing enemies who cross it.",
-                "image": "Valorant Assets/Abilities/Cypher_Trapwire.png"
+                "image": "Valorant Assets/Abilities/Property 1=c-Cypher_Trapwire.png"
               },
               {
                 "name": "Spycam",
@@ -221,7 +221,7 @@
               {
                 "name": "Neural Theft",
                 "description": "Reveals the location of all remaining enemies by using a recently deceased enemy’s body.",
-                "image": "Valorant Assets/Abilities/Cypher_Neural_Theft.png"
+                "image": "Valorant Assets/Abilities/Property 1=x-Cypher_Neural_Theft.png"
               }
             ],
             "image": "Valorant Assets/Agents/Cypher_artwork.png"
@@ -234,7 +234,7 @@
               {
                 "name": "Shrouded Step",
                 "description": "Teleports to a nearby location instantly.",
-                "image": "Valorant Assets/Abilities/Omen_Shrouded_Step.png"
+                "image": "Valorant Assets/Abilities/Property 1=c-Omen_Shrouded_Step.png"
               },
               {
                 "name": "Dark Cover",
@@ -249,7 +249,7 @@
               {
                 "name": "From the Shadows",
                 "description": "Allows Omen to teleport anywhere on the map. If killed during the teleport, he returns to the original location.",
-                "image": "Valorant Assets/Abilities/Omen_From_The_Shadows.png"
+                "image": "Valorant Assets/Abilities/Property 1=x-Omen_From_the_Shadows.png"
               }
             ],
             "image": "Valorant Assets/Agents/Omen_artwork.png"

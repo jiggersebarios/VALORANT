@@ -68,7 +68,7 @@ nav {
 
 
 .background-img {
-    background-image: url('Valorant Assets/Valorant-Art/VALORANT_Logo_V.jpg');
+    background-image: url('../Valorant Assets/Valorant-Art/VALORANT_Logo_V.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -122,7 +122,7 @@ nav {
     width: 150%;
     font-size: 20px;
     margin: 20px 0;
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 .front-right-content button {
@@ -139,7 +139,8 @@ nav {
 }
 
 .below-background {
-    background-image: url('Valorant Assets/thumb-1920-1282493.jpg');
+    background-image: url('../Valorant Assets/thumb-1920-1282493.jpg');
+
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -266,6 +267,7 @@ nav {
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Tungsten', sans-serif;
   }
   
   #agent-role {
@@ -279,7 +281,7 @@ nav {
   }
   
   .agent-info-left p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
   }
   
@@ -397,9 +399,9 @@ nav {
 .icon-card img:hover {
     opacity: 0.7;
 }
-
+/*agent class*/
 .agent-class {
-    background-image: url('Valorant Assets/BW.jpg'); /* Background image */
+    background-image: url('../Valorant Assets/BW.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
