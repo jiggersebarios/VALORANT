@@ -202,24 +202,24 @@ nav {
 }
 .classes {
     position: absolute;
-    top: 135vh; /* Placed at the middle of the second background */
+    top: 135vh; 
     right:  7%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Optional: adds space between the images */
+    gap: 40px;
 }
 
 .classes img {
-    width: 70px; /* You can adjust the width as needed */
-    height: auto; /* Ensures the image's aspect ratio is maintained */
+    width: 70px; 
+    height: auto; 
     
 }
 
 
 /* Agent */
 .agents {
-    background-color: #0F1923; /* Dark background color */
+    background-color: #0F1923; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,13 +248,13 @@ nav {
     transform: translate(-10%, -50%);
     display: flex;
     color: white;
-    width: 65%; /* ⬅️ Shrink this to tighten layout */
-    max-width: 950px; /* ⬅️ Less width = closer content */
+    width: 65%; 
+    max-width: 950px; 
     padding: 20px;
     z-index: 2;
     align-items: center;
     justify-content: space-between;
-    gap: 0px; /* ⬅️ Space between text and image */
+    gap: 0px; 
 }
 
   
@@ -263,11 +263,13 @@ nav {
   }
   
   .agent-info-left h1 {
-    font-size: 40px;
+    font-size: 60px;
+    letter-spacing: 5px; 
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Tungsten', sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
   }
   
   #agent-role {
@@ -312,7 +314,7 @@ nav {
     font-size: 14px;
     color: #ccc;
     border-top: 1px solid #555;
-    padding-top: 8px;
+    padding-top: 4px;
   }
   
   .agent-img-right img {
@@ -328,7 +330,7 @@ nav {
 
 .ability-icons {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
@@ -345,37 +347,37 @@ nav {
     transform: scale(1.1);
 }
 
-.ability-description {
-    font-size: 14px;
-    color: #ccc;
-    padding-top: 5px;
-    border-top: 1px solid #555;
-}
 
+#ability-description strong {
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-weight: bold; /* Make sure the text remains bold */
+    color: #ccc; /* Optional: Change the color to match your theme */
+  }
+  
 .icon-card {
     position: absolute;
-    left: 10%; /* Adjust this to move it more left or right */
-    top: 50%; /* Center it vertically */
-    transform: translateY(-50%); /* Ensures it's centered */
+    left: 10%;
+    top: 50%; 
+    transform: translateY(-50%); 
     width: 30%; 
-    height: 40%;
+    height: 45%;
     background-color: #ECE7E1; 
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Make sure it's above the image */
+    z-index: 2; 
 }
 
 /* Grid layout for agent buttons */
 .icon-card {
     display: grid;
     grid-template-columns: repeat(5, 60px); /* 5 images per row with 60px width each */
-    gap: 10px 50px;  /* 10px vertical gap, 50px horizontal gap */
-    justify-content: center; /* Centers the grid inside the container */
+    gap: 10px 50px;  
+    justify-content: center; 
 }
 
-/* Remove button styles, keeping only the image */
+
 .icon-card button {
     border: none;
     background: none;
@@ -386,7 +388,7 @@ nav {
     align-items: center;
 }
 
-/* Style for images inside the buttons */
+
 .icon-card img {
     width: 70px;
     height: auto; /* Maintains the aspect ratio */
@@ -471,20 +473,20 @@ nav {
 }
 
 .class-img button {
-    background: none; /* Removes background */
-    border: none; /* Removes border */
-    padding: 0; /* Removes extra space */
-    margin: 5px; /* Adds spacing between buttons */
-    cursor: pointer; /* Makes it clickable */
-    display: flex; /* Aligns image and text */
-    flex-direction: column; /* Stacks image and text vertically */
-    align-items: center; /* Centers content */
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 5px; 
+    cursor: pointer; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
 .class-img button img {
-    width: 80px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    width: 80px; 
+    height: auto; 
+    transition: transform 0.2s ease-in-out; 
 }
 
 .class-img button:hover img {
@@ -531,7 +533,7 @@ nav {
 }
 
 .agent-card {
-    background: #1c1c1c; /* Dark theme */
+    background: #1c1c1c; 
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
